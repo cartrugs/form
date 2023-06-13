@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario viejuners</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Formulario 1: Viejuners -->
+  <form class="form">
+    <fieldset>
+      <legend>Tú:</legend>
+      <label class="form-label" for="nombre">Nombre:</label>
+      <input type="text" id="nombre" class="form-input" autofocus tabindex="1" placeholder="Ingresa tu nombre" required>
+      <label class="form-label" for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" class="form-input" tabindex="2" placeholder="Ingresa tu apellido" required>
+      <label class="form-label" for="edad">Edad:</label>
+      <input type="number" id="edad" class="form-input" tabindex="3" placeholder="Ingresa tu viejuner" required>
+      <div class="check">
+        <label class="form-label">Sexo:</label>
+        <label>
+          <input type="radio" name="gender" class="form-radio" tabindex="4">
+          Masculino
+        </label>
+        <label>
+          <input type="radio" name="gender" class="form-radio" tabindex="5">
+          Femenino
+        </label>
+      </div>
+      <div class="check">  
+        <label class="form-label">Me siento viejuner:</label>
+        <input type="checkbox" class="form-checkbox" tabindex="6">
+      </div>
+      <div class="check">
+        <label class="form-label">Escribe algo sobre ti:</label>
+        <textarea class="form-textarea" tabindex="7" placeholder="Explica por qué quieres entrar en el club de Etrepenes..."></textarea>
+      </div>
+      
+      <label class="form-label" for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" class="form-input" tabindex="8" placeholder="Ingrese su correo electrónico" required>
+      <label class="form-label" for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" class="form-input" tabindex="9" placeholder="Ingrese su número de teléfono" required>
+      <input type="reset" value="Reset" class="form-button" tabindex="10">
+      <input type="submit" value="Submit" class="form-button" tabindex="11">
+    </fieldset>
+  </form>
+  
+
+    <!-- Formulario 2: Ladronzuelos -->
+<form class="form">
+  <fieldset>
+    <label class="form-label">Día:</label>
+    <input type="date" class="form-input" max="2023-06-12" min="2020-01-01">
+    <label class="form-label">Hora:</label>
+    <input type="time" class="form-input">
+    <div>
+      <label class="form-label">Color de la bicicleta:</label>
+      <input type="color" class="form-input" value="#fff">
+      <label class="form-label">Rango de precio:</label>
+      <input type="range" min="0" max="100" class="form-input">
+    </div>
+    
+    <label class="form-label">Tipo de bicicleta:</label>
+    <select class="form-select">
+      <option>Paseo</option>
+      <option>Señorial</option>
+      <option>Anti-plebeyos</option>
+      <option>PorEncimaDelHombro</option>
+      <option>Montaña</option>
+      <option>Gamusinos</option>
+      <option>Hueleflores premium</option>
+      <option>Fango lover</option>
+      <option>Carreras</option>
+      <option>Metroymedio</option>
+      <option>3 de la tarde. Fluorescente edition</option>
+      <option>Grupitors</option>
+    </select>
+    <label class="form-label">Accesorios:</label>
+    <select multiple class="form-select">
+      <option>Ruedines</option>
+      <option>Pegatinas</option>
+      <option>Cestita</option>
+      <option>Bomba de aire</option>
+      <option>Timbre</option>
+      <option>Foco</option>
+    </select>
+    <label class="form-label">¿Qué marca era?:</label>
+    <datalist id="marcas">
+      <option value="specialized"></option>
+      <option value="trek"></option>
+      <option value="merida"></option>
+      <option value="scott"></option>
+      <option value="giant"></option>
+      <option value="cube"></option>
+      <option value="lapierre"></option>
+      <option value="orbea"></option>
+      <option value="cannondale"></option>
+      <option value="bmc"></option>
+      <option value="canyon"></option>
+      <option value="look"></option>
+      <option value="protek"></option>
+      <option value="megamo"></option>
+      <option value="pinarello"></option>
+      <option value="bianchi"></option>
+      <option value="bh"></option>
+      <option value="factor"></option>
+      <option value="ghost"></option>
+      <option value="cervélo"></option>
+      <option value="argon"></option>
+    </datalist>
+    <input type="text" list="marcas" class="form-input">
+    <input type="reset" value="Reset" class="form-button">
+    <input type="submit" value="Submit" class="form-button">
+  </fieldset>
+</form>
+
+</body>
+</html>
